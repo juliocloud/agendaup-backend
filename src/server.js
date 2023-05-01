@@ -28,7 +28,7 @@ app.use(cors(corsOptions))
 app.use('/api/schedule', scheduleRoutes);
 app.use('/api/user', userRoutes);
 
-const PORT = process.env.SERVER_PORT || 3333
+const PORT = process.env.PORT || 3000
 
 app.listen(PORT, () => console.log(`Server launched, port ${PORT}`))
 
